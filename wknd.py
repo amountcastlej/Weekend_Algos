@@ -41,3 +41,25 @@ class Solution(object):
 
 what = Solution()
 print (what.isPalindrome(-121))
+
+#3n + 1
+#Take a positive integer starting at even or odd, if the number is even divide it by two, if it is odd perform the calculation 3N + 1. 
+# After this, take the product of that calculation and repeat the process
+
+def collatz_sequence(x):
+    seq = []
+    while True:
+        if x % 2 == 0:
+            x = x / 2
+        else:
+            x = x * 3 + 1
+        seq.append(x)
+        if x < 2: break
+    
+    return seq 
+
+print(collatz_sequence(0))
+print(collatz_sequence(1))
+print(collatz_sequence(4))
+print(collatz_sequence(5))
+print(collatz_sequence(6))
