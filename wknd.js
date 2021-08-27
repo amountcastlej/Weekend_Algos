@@ -76,3 +76,6 @@ for (var i = 1; i <= num; i++){
 } 
 }
 return sum;
+}
+threesFives(10)
+threesFives(15)
